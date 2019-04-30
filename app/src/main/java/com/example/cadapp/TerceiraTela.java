@@ -12,6 +12,6 @@ public class TerceiraTela extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.terceiro_content);
 
-        Log.i(TAG, "onCreate");
+        Log.d(TAG, "Activity executada");
     }
 }

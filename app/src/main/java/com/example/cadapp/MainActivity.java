@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //Chama o método para criar instâncias dos controles da tela
         criarObjetos();
 
-        Log.d(TAG , "Activity criada");
+        Log.d(TAG , "Activity executada");
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

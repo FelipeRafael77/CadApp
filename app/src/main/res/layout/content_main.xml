@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:layout_gravity="end|bottom"
-        android:layout_marginTop="460dp"
-        android:text="salvar" />
+        android:layout_marginTop="487dp"
+        android:text="@string/btSalvar" />
 
 </LinearLayout>
