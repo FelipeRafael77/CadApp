@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SegundaTela"
+    tools:showIn="@layout/segunda_activity">
+
+    <TextView
+        android:id="@+id/tNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="@string/pergunta"/>
+
+    <Button
+        android:id="@+id/btSim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_gravity="end|left"
+        android:text="@string/bt1"/>
+
+    <Button
+        android:id="@+id/btNao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-48dp"
+        android:layout_marginRight="120dp"
+        android:layout_gravity="end|right"
+        android:text="@string/bt2"/>
+
+</LinearLayout>

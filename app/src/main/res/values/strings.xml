@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CadApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_sobre">Sobre</string>
+    <string name="texto1">Nome:</string>
+    <string name="texto2">Idade:</string>
+    <string name="texto3">Endereço:</string>
+    <string name="pergunta">Seus dados estão corretos?</string>
+    <string name="bt1">SIM</string>
+    <string name="bt2">NÃO</string>
+    <string name="dados">Nome: Felipe Rafael Medeiros - R.A.: 00195182</string>
+</resources>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cadapp.MainActivity">
+    <item
+        android:id="@+id/MSobre"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_menu_sobre"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="always" />
+    </menu>
