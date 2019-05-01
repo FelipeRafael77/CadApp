@@ -44,16 +44,15 @@ public class SegundaTela extends AppCompatActivity {
         //Preenche uma instância de um Bundle com os dados que foram passados
         Bundle b = getIntent().getExtras();
         //Lê os dados do Bundle passando os dados para os componentes da Activity
-        tNome.setText(tNome.getText() + "\n" + "Nome: " + b.getString("nome"));
+        tNome.setText(tNome.getText() + " " + b.getString("nome"));
         Integer idade = b.getInt("idade");
-        tIdade.setText(tIdade.getText() + "\n" + "Idade: " + " " + idade.toString());
-        tEndereco.setText(tEndereco.getText() + "\n" + "Endereço: " + b.getString("endereco"));
+        tIdade.setText(tIdade.getText() + " " + idade.toString());
+        tEndereco.setText(tEndereco.getText() + " " + b.getString("endereco"));
 
         btSim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(), MainActivity.class);
-                Toast.makeText(getApplicationContext(),"Dados salvos com sucesso!", Toast.LENGTH_SHORT).show();
+                Intent it = new Intent();
                 setResult(Activity.RESULT_OK, it);
                 finish();
 
@@ -63,12 +62,48 @@ public class SegundaTela extends AppCompatActivity {
         btNao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(), MainActivity.class);
+                Intent it = new Intent();
                 setResult(Activity.RESULT_CANCELED, it);
                 finish();
 
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(TAG, "onRestart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
     }
 }
 

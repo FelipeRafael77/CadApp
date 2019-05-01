@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,56 +9,78 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/texto1"/>
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/campo1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="-35dp"
-        android:maxLength="50" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text1"/>
 
-    <TextView
+        <EditText
+            android:id="@+id/campo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:maxLength="50" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/texto2"/>
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:text="@string/text2"/>
 
     <EditText
         android:id="@+id/campo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="-35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
         android:maxLength="2"
         android:inputType="number" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/texto3"/>
+        android:layout_marginTop="90dp"
+        android:text="@string/text3"/>
 
-    <EditText
-        android:id="@+id/campo3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="-35dp"
-        android:maxLength="50"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/campo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="8dp"
+            android:inputType="text"
+            android:maxLength="50" />
 
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
     <Button
         android:id="@+id/btSalvar"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_gravity="end|bottom"
-        android:layout_marginTop="487dp"
-        android:text="@string/btSalvar" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:layout_marginTop="556dp"
+        android:text="@string/btSave" />
+   </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
